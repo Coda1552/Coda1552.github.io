@@ -1,0 +1,193 @@
+* {
+    font-family: "Sour Gummy", serif;
+    font-weight: 100;
+    font-style: normal;
+}
+      
+body {
+    background-color: #49b2fb;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: relative;
+    z-index: 1;
+    height: 3rem;
+}
+
+.nav {
+    background-color: #1a48c2;
+    color: #49b2fb;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem;
+    position: fixed;
+    width: 100%;
+    height: 3rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+/*the blue portal*/
+
+.nav div:nth-child(2) {
+    display: flex;
+    font-size: 200%;
+    align-items: center;
+    font-weight: bolder;
+}
+
+.nav div:nth-child(2) a:nth-child(-n+1) {
+    color: #fff;
+    text-decoration: none;
+    padding: 0 1rem;   
+}
+
+.nav div:nth-child(2) img {
+    padding: 0 .5rem;
+}
+
+/*mods, about, socials*/
+
+.nav div:nth-child(3) {
+    display: flex;
+    align-items: center;
+    padding-right: 1rem;
+    font-weight: bolder;
+}
+
+.nav div:nth-child(3) a:nth-child(-n+4) {
+    color: #fff;
+    text-decoration: none;
+    padding: 0 1rem;   
+}
+
+.nav div:nth-child(3) img {
+    padding: 0 .5rem;
+}
+
+.nav img:hover {
+    animation: rotateAnimation 500ms ease-in-out;
+}
+
+/* overlay */
+/* animation */
+@keyframes rotateAnimation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* hero style image */
+.hero-container {
+    position: relative;
+    color: #fff;
+}
+
+.hero-image {
+    height: auto;
+    width: 100%;
+    display: block;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 20vw;
+    transform: translate(-50%, -50%);
+    text-align: left;
+}
+
+.hero-btn {
+  margin: 0rem;
+  padding: .5rem 2rem;
+  background-color: #1a48c2;
+  color: #fff;
+  border: none;
+  border-radius: 1.5rem;
+  font-size: 1.25rem;
+  text-decoration: none;   
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    margin: 1rem 0;
+}
+
+/* blue spacer */
+.blue-spacer {
+    width: 100%;
+    height: 2.5rem;
+    background-color: #1a48c2;
+ }
+
+.light-spacer {
+    width: 100%;
+    height: 1rem;
+    background-color: #49b2fb;
+ }
+ 
+ /* mods elements */
+.mods h2, h1 {
+    font-size: 2.5rem;
+    color: #fff;
+    text-align: center;
+ }
+
+.mods h4 {
+    font-size: 1.5rem;
+    color: #fff;
+    text-align: center;
+ }
+
+.blue-spacer-mods {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: .5rem;
+    height: 2.5rem;
+    background-color: #1a48c2;
+ }
+
+.mods-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    padding: 0 1rem 1rem 1rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.mods-child {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    grid-gap: .5rem;
+}
+
+.mods h2 {
+    background-color: #1a48c2;
+    width: 10vw;
+    justify-items: center;
+    border-radius: .5rem;
+    padding: .25rem;
+    margin: auto;
+}
+
+.mods-grid {
+    background-color: #1a48c2;
+    border-radius: 1rem;
+    padding: .85rem .85rem;
+}
+
+.mods-child h4 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.mods-child h4:nth-child(1) {
+    font-size: 1.5rem;
+}
