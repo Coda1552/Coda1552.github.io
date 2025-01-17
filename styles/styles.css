@@ -154,7 +154,7 @@ header {
 
 .mods-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 1rem;
     padding: 0 1rem 1rem 1rem;
     max-width: 1200px;
@@ -190,4 +190,24 @@ header {
 
 .mods-child h4:nth-child(1) {
     font-size: 1.5rem;
+}
+
+.mods-btn {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.hero-container-mods {
+    position: relative;
+    color: #fff;
+}
+
+.hero-text-mods {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5rem;
 }
